@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Anas Tawalbeh website homepage">
+        <meta name="keywords" content="Anas, Tawalbeh, Profile, Homepage, Resume, Porfolio">
+        <meta name="author" content="Anas Tawalbeh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="contact.css">
+        <title>Contact me</title>
+    </head>
+    <body>
+        <header>
+            <h1>Feel free to share your feedback &#128521;</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Resume.html">Resume</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a href="#works">My Works</a>
+            </nav>
+        </header>
+        
+        <section class="container">
+            <h1 class="open-button" onclick="openForm()">Open Form</h1>
+            <div class="form-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                          <h1>Login</h1>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                          <button type="submit" class="btn">Login</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+            </div>
+        
+            <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+                }
+                function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+        </section>
+        <footer>
+            copyright &copy; Anas Tawalbeh, 2022.
+        </footer>
+</body>
+</html>
+
